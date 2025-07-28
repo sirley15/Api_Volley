@@ -5,33 +5,42 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <EditText
-        android:id="@+id/editTextTitle"
+        android:id="@+id/editTextPostId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ingrese el título"
+        android:hint="ID del Post a Actualizar (ej. 1)"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextNewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nuevo título"
         android:inputType="textCapSentences"
         android:minHeight="48dp" />
 
     <EditText
-        android:id="@+id/editTextBody"
+        android:id="@+id/editTextNewBody"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="Ingrese el cuerpo del mensaje"
+        android:hint="Nuevo cuerpo del mensaje"
         android:inputType="textMultiLine"
         android:lines="5"
         android:gravity="top"
         android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/buttonSubmit"
+        android:id="@+id/buttonUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Crear Post" />
+        android:text="Actualizar Post" />
 
     <TextView
         android:id="@+id/textViewResponse"
